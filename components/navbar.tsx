@@ -1,14 +1,23 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link"; // Import Link from Next.js
-import { Home, Info, Briefcase, Mail, AlignJustify } from "lucide-react";
+import {
+  Home,
+  Info,
+  Mail,
+  AlignJustify,
+  Bike,
+  Server,
+  Car,
+} from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 const menuItems = [
   { name: "Home", icon: Home, link: "/" },
-  { name: "Become a Driver", icon: Info, link: "/driver" },
-  { name: "Services", icon: Briefcase, link: "/services" },
-  { name: "About", icon: Briefcase, link: "/about" },
+  { name: "Become a Driver", icon: Car, link: "/driver" },
+  { name: "Become a logistics Personnel ", icon: Bike, link: "/logistics" },
+  { name: "Services", icon: Server, link: "/services" },
+  { name: "About", icon: Info, link: "/about" },
   { name: "Contact", icon: Mail, link: "/contact" },
 ];
 
